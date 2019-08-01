@@ -1,0 +1,88 @@
+import java.util.Scanner;
+public class Akinator {
+    public static void main(String[]args){
+        Scanner playerInput;
+        playerInput = new Scanner(System.in);
+        System.out.println("Welcome to the Class akinator");
+        System.out.println("First Question, Are you male(1) or female(2)");
+        int playerChoice1 = playerInput.nextInt() ;
+        if (playerChoice1 == 1){
+            System.out.println("Do you where glasses if yes type 1 if no type 2");
+            int playerChoice2 = playerInput.nextInt() ;
+            if(playerChoice2 == 1){
+                System.out.println("Is Your hair Blonde(1), or Brown(2).");
+                int playerChoice3 = playerInput.nextInt() ;
+                if(playerChoice3 == 1){
+                    System.out.println("is your name George if yes click 1 if no click 2?");
+                    int playerChoice5 = playerInput.nextInt() ;
+                    if(playerChoice5 == 1){
+                        System.out.println("Thanks for playing the Class Akinator George");
+                    }
+                    if(playerChoice5 == 2){
+                        System.out.println("oh thats to bad, I guess you aren't in the class but thanks for playing the Class Akinator");
+                    }
+                }
+                else if(playerChoice3 == 2){
+                    System.out.println("Is your name Julian?");
+                    int playerChoice6 = playerInput.nextInt() ;
+                    if(playerChoice6 == 1){
+                        System.out.println("Thanks for playing the Class Akinator Julian!");
+                    }
+                    else if(playerChoice6 == 2){
+                        System.out.println("Oh well,  Iguess your not in the class, but thanks for playing the Class Akinator");
+                    }
+
+                }
+            }
+            else if(playerChoice2 == 2){
+                System.out.println("Is your hair blond(1) or brown/black(2)");
+                int playerChoice7 = playerInput.nextInt() ;
+                if(playerChoice7 == 1){
+                    System.out.println("Is your name London? If it is type 1 if it is not type 2");
+                    int playerChoice8 = playerInput.nextInt() ;
+                    if(playerChoice8 == 1){
+                        System.out.println("Thanks for playing the Class Akinator London!");
+                    }
+                    else if (playerChoice8 == 2){
+                        System.out.println("I guess your not in the class, but thanks for playing the Class Akinator");
+                    }
+                }
+                else if(playerChoice7 == 2){
+                    System.out.println("Is your  Rocket League name potato? if yes, type 1 if not, type 2");
+                    int playerChoice9 = playerInput.nextInt() ;
+                    if(playerChoice9 == 1){
+                        System.out.println("Is your name Dylan? if yes, type 1, if not type 2");
+                        int playerChoice10 = playerInput.nextInt() ;
+                        if(playerChoice10 == 1){
+                            System.out.println("Thanks for playing the Class Akinator Dylan!");
+                        }
+                        else if(playerChoice10 == 2){
+                            System.out.println("I guess your not in the class, but thanks for playing the Class Akinator");
+                        }
+                    }
+                    else if(playerChoice9 == 2){
+                        System.out.println("Is your name Noah? If yes, type 1 if no, type 2");
+                        int playerChoice11 = playerInput.nextInt() ;
+                        if(playerChoice11 == 1){
+                            System.out.println("Thanks for playing the Class Akinator Noah!");
+                        }
+                        else if(playerChoice11 == 2){
+                            System.out.println("I huess your not in the class but thanks for playing the Class Akinator");
+                        }
+                    }
+                }
+            }
+        }
+        else if(playerChoice1 == 2){
+            System.out.println("is Your name Alex? if yes, type 1 if no, type 2");
+            int playerChoice4 = playerInput.nextInt() ;
+            if(playerChoice4 == 1){
+                System.out.println("Thanks for playing the Class Akinator Alex.");
+            }
+            else if(playerChoice4 == 2){
+                System.out.println("Oh well thats to bad, you must not be in our class. But thanks for playing the Class Akinator");
+            }
+        }
+
+    }
+}
